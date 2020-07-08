@@ -1,0 +1,155 @@
+$font_S : 14px ;
+$font_M : 24px ;
+$font_L : 64px ;
+$backColor : #333333 ;
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+header
+{
+   h3
+   {
+        font-size: $font_M;
+        padding: 20px 40px;
+   } 
+}
+.container
+{
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .aside
+    {
+        width: 40%;
+        img
+        {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
+    }
+    .main
+    {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        h1
+        {
+            font-size: $font_L;
+            padding: 10px;
+            margin: 10px;
+        }
+        p
+        {
+            font-size: $font_M;
+            width: 60%;
+            padding: 10px;
+            margin: 10px;
+        }
+        button
+        {
+            border :0;
+            color: white;
+            background-color: $backColor;
+            width: 180px;
+            height: 60px;
+            margin: 10px 40px;
+        }
+    }
+}
+footer
+{
+    width: 100%;
+    text-align: center;
+    p
+    {
+        font-size: $font_S;
+    }
+}
+@media (max-width: 1199.98px)
+{
+    .container
+    {
+        margin: 50px auto;
+        .aside
+        {
+            width: 50%;
+        }
+        .main
+        {
+            width: 50%;
+            h1
+            {
+                font-size: 50px;
+            }
+        }
+    }
+}
+@media (max-width: 991.98px)
+{
+    .container
+    {
+        width: 100%;
+        .aside
+        {
+            width: 60%;
+        }
+        .main
+        {
+            width: 40%;
+            h1
+            {
+                font-size: 30px;
+            }
+            p
+            {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 767.98px)
+{
+    .container
+    {
+        .main
+        {
+            button
+            {
+                width: 150px;
+                height: 50px;
+                margin: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 575.98px)
+{
+    .container
+    {
+        margin: 10px auto;
+        flex-direction: column;
+        .aside
+        {
+            width: 90%;
+        }
+        .main
+        {
+            width: 90%;
+            p
+            {
+                width: 90%;
+            }
+            button
+            {
+                align-self: center;
+            }
+        }
+    }   
+}
