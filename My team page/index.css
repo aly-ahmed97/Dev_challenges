@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'PT Serif','Poppins', sans-serif;
+}
+
+header {
+  width: 90%;
+  margin: 60px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header h1 {
+  width: 40%;
+  font-size: 36px;
+  padding: 0px 20px;
+}
+
+header .aside {
+  width: 50%;
+}
+
+header .aside h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+
+header .aside p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  width: 60%;
+  padding: 10px;
+}
+
+.main {
+  width: 80%;
+  margin: 50px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 500px 500px;
+      grid-template-rows: 500px 500px;
+  row-gap: 100px;
+}
+
+.main .card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.main .card img {
+  width: 250px;
+  height: 90%;
+  border-radius: 5px;
+}
+
+.main .card .name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.main .card .job {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 60px;
+  right: -35px;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.main .specialCard {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+footer {
+  color: #A9A9A9;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+}
+
+@media (max-width: 1199.98px) {
+  .main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .main {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 500px 500px 500px;
+        grid-template-rows: 500px 500px 500px;
+    row-gap: 50px;
+  }
+  .main .specialCard {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .main .tabletSCard {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header h1 {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+  header .aside {
+    width: 100%;
+  }
+  .main {
+    -ms-grid-rows: 350px 350px 350px;
+        grid-template-rows: 350px 350px 350px;
+    row-gap: 35px;
+  }
+  .main .card {
+    width: 200px;
+    height: 300px;
+  }
+  .main .card img {
+    width: 200px;
+  }
+  .main .card .job {
+    right: -75px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header {
+    margin: 40px auto;
+  }
+  header .aside {
+    width: 140%;
+  }
+  .main {
+    -ms-grid-rows: 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+    row-gap: 20px;
+  }
+  .main .card {
+    width: 150px;
+    height: 250px;
+  }
+  .main .card img {
+    width: 150px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
