@@ -1,0 +1,274 @@
+$font_L : 48px;
+$font_M : 24px;
+$font_S : 16px;
+$font_XS : 14px;
+$SepcialOrange : #F2994A;
+$lightGrey : #BDBDBD;
+$textColor : #333333;
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif,'Playfair Display',serif;
+}
+body
+{
+    width: 70%;
+    margin: auto;
+}
+h1
+{
+    font-family: 'Playfair Display',serif;
+    font-size: $font_L;
+    padding: 20px;
+    margin-top: 10px;
+}
+.discription
+{
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    img
+    {
+        padding: 6px 10px 6px 0px;
+    }
+    p
+    {
+        width: 60%;
+    }
+}
+.mainImage
+{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+    img
+    {
+        width: 100%;
+    }
+}
+.aside
+{
+    width: 220px;
+    height: 360px;
+    box-shadow: 1px 1px 3px $lightGrey;
+    border-radius: 5px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    .line
+    {
+        width: 90%;
+        margin: auto;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        img
+        {
+            width: 70px;
+            height: 70px;
+            padding: 10px;
+        }
+        .lineText
+        {
+            .lineName
+            {
+                color: $lightGrey;
+                font-size: $font_XS;
+                margin: 5px;
+            }
+            .lineJob
+            {
+                font-size: $font_S;
+                margin: 5px;
+            }
+        }
+    }
+}
+.Ingredients
+{
+    h3
+    {
+        font-family: 'Playfair Display',serif;
+        font-size: $font_M;
+        margin: 20px 0px;
+        color: $textColor;
+    }
+    .section1
+    {
+        @extend %sectionStyle
+    }
+    .section2
+    {
+        @extend %sectionStyle
+    }
+}
+.Instructions
+{
+    h3
+    {
+        font-family: 'Playfair Display',serif;
+        font-size: $font_M;
+        margin: 20px 0px;
+        color: $textColor;
+    }
+    .list
+    {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        .no
+        {
+            width: 20px;
+            height: 20px;
+            padding: 20px;
+            margin: 20px;
+            background-color: $SepcialOrange;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p
+            {
+                font-family: 'Playfair Display',serif;
+                color: white;
+                font-size: $font_M;  
+            }
+        }
+        p
+        {
+            color: $textColor;
+            margin: 20px 0px;
+        }
+    }
+}
+#source
+{
+    color: $lightGrey;
+    padding: 20px;
+    margin: 20px;
+    font-size: $font_S;
+}
+footer
+{
+    p
+    {
+        text-align: center;
+        font-size: $font_XS;
+        margin: 10px;
+    }
+}
+%sectionStyle
+{
+    width: 60%;
+    margin: 20px;
+    h4
+    {
+        font-family: 'Playfair Display',serif;
+        font-size: $font_S;
+        color: $textColor;
+    }
+    ul
+    {
+        list-style: none;
+        li
+        {
+            padding: 10px 0px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            .listStyle
+            {
+                width: 15px;
+                height: 15px;
+                border: 1px solid $lightGrey;
+                border-radius: 5px;
+                margin-top: 5px;
+            }
+            p
+            {
+                width: 90%;
+                color: $textColor;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 1199.98px)
+{
+}
+@media (max-width: 991.98px)
+{
+    body
+    {
+        width: 85%;
+    }
+}
+@media (max-width: 767.98px)
+{
+    body
+    {
+        width: 95%;
+    }
+    h1
+    {
+        font-size: $font_M + 5;
+    }
+    .discription
+    {
+        p
+        {
+            width: 90%;
+        }
+    }
+    .aside
+    {
+        height: 200px;
+        float: none;
+        width: 100%;
+        box-shadow: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .line
+        {
+            padding: 0px;
+            img
+            {
+                width: 60px;
+                height: 60px;
+            }  
+            .lineText
+            {
+                .lineName
+                {
+                    margin: 0px;
+                }
+                .lineJob
+                {
+                    margin: 0px;
+                }
+            }
+        }
+        #mobileSpecial
+        {
+            grid-column: 1/4;
+        }
+    }
+%sectionStyle
+{
+    width: 90%;   
+}
+.Instructions
+{
+    .list
+    {
+        width: 90%;
+    }
+}
+}
+@media (max-width: 575.98px)
+{
+
+}

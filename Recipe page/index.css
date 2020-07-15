@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif,'Playfair Display',serif;
+}
+
+body {
+  width: 70%;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Playfair Display',serif;
+  font-size: 48px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.discription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+}
+
+.discription img {
+  padding: 6px 10px 6px 0px;
+}
+
+.discription p {
+  width: 60%;
+}
+
+.mainImage {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.mainImage img {
+  width: 100%;
+}
+
+.aside {
+  width: 220px;
+  height: 360px;
+  -webkit-box-shadow: 1px 1px 3px #BDBDBD;
+          box-shadow: 1px 1px 3px #BDBDBD;
+  border-radius: 5px;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aside .line {
+  width: 90%;
+  margin: auto;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside .line img {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+}
+
+.aside .line .lineText .lineName {
+  color: #BDBDBD;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.aside .line .lineText .lineJob {
+  font-size: 16px;
+  margin: 5px;
+}
+
+.Ingredients h3 {
+  font-family: 'Playfair Display',serif;
+  font-size: 24px;
+  margin: 20px 0px;
+  color: #333333;
+}
+
+.Instructions h3 {
+  font-family: 'Playfair Display',serif;
+  font-size: 24px;
+  margin: 20px 0px;
+  color: #333333;
+}
+
+.Instructions .list {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.Instructions .list .no {
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #F2994A;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instructions .list .no p {
+  font-family: 'Playfair Display',serif;
+  color: white;
+  font-size: 24px;
+}
+
+.Instructions .list p {
+  color: #333333;
+  margin: 20px 0px;
+}
+
+#source {
+  color: #BDBDBD;
+  padding: 20px;
+  margin: 20px;
+  font-size: 16px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.Ingredients .section1, .Ingredients .section2 {
+  width: 60%;
+  margin: 20px;
+}
+
+.Ingredients .section1 h4, .Ingredients .section2 h4 {
+  font-family: 'Playfair Display',serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+.Ingredients .section1 ul, .Ingredients .section2 ul {
+  list-style: none;
+}
+
+.Ingredients .section1 ul li, .Ingredients .section2 ul li {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.Ingredients .section1 ul li .listStyle, .Ingredients .section2 ul li .listStyle {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.Ingredients .section1 ul li p, .Ingredients .section2 ul li p {
+  width: 90%;
+  color: #333333;
+  margin-left: 30px;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    width: 85%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    width: 95%;
+  }
+  h1 {
+    font-size: 29px;
+  }
+  .discription p {
+    width: 90%;
+  }
+  .aside {
+    height: 200px;
+    float: none;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .aside .line {
+    padding: 0px;
+  }
+  .aside .line img {
+    width: 60px;
+    height: 60px;
+  }
+  .aside .line .lineText .lineName {
+    margin: 0px;
+  }
+  .aside .line .lineText .lineJob {
+    margin: 0px;
+  }
+  .aside #mobileSpecial {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .Ingredients .section1, .Ingredients .section2 {
+    width: 90%;
+  }
+  .Instructions .list {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
