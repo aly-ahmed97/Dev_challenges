@@ -1,0 +1,138 @@
+$font_L : 24px;
+$font_M : 18px;
+$font_S : 14px;
+$lightGrey : #E5E5E5;
+$textColor : #4E5150;
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif,'Playfair Display',serif;
+}
+body
+{
+    width: 100%;
+}
+header
+{
+    text-align: center;
+    margin:  50px;
+    img
+    {
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+    }
+    h3
+    {
+        font-size: $font_L;
+        color: $textColor;
+        padding: 5px;
+    }
+    p
+    {
+        font-size: $font_S;
+        color: #A9A9A9;
+        padding: 5px;
+    }
+    .Social
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .socialElement
+        {
+            width: 100px;
+            height: 70px;
+            background-color: $lightGrey;
+            border-radius: 15px;
+            margin: 7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p
+            {
+                color: $textColor;
+                font-size: $font_M;
+            }
+        }
+    }
+}
+.main
+{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 
+            "first second second"
+            "third third forth"
+            "fifth sixth forth";
+    #first
+    {
+        grid-area: first;
+        @extend %imageFit;
+    }
+    #second
+    {
+        grid-area: second;
+        @extend %imageFit;
+    }
+    #third
+    {
+        grid-area: third;
+        @extend %imageFit;
+    }
+    #forth
+    {
+        grid-area: forth;
+        @extend %imageFit;
+    }
+    #fifth
+    {
+        grid-area: fifth;
+        @extend %imageFit;
+    }
+    #sixth
+    {
+        grid-area: sixth;
+        @extend %imageFit;
+    }
+}
+%imageFit
+{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+footer
+{
+    text-align: center;
+    p
+    {
+        font-size: $font_S;
+        padding: 10px;
+        margin: 5px;
+        color: #A9A9A9;
+    }
+}
+@media (max-width: 1199.98px)
+{
+}
+@media (max-width: 991.98px)
+{
+    .main
+    {
+        width: 90%;
+        grid-gap: 10px;
+    }
+}
+@media (max-width: 767.98px)
+{
+
+}
+@media (max-width: 575.98px)
+{
+
+}
