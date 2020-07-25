@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+aside {
+  width: 350px;
+  height: 500px;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+}
+
+aside .element {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+
+aside .element img {
+  width: 120px;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+aside .element .elementDetails .elementName {
+  font-size: 18px;
+  white-space: nowrap;
+  margin: 20px 0px;
+}
+
+aside .element .elementDetails .elementPrice {
+  color: #F2994A;
+}
+
+aside .element .elementDetails .elementOldPrice {
+  text-decoration: line-through;
+}
+
+aside .element .elementDetails .elementQuantity {
+  width: 100px;
+  height: 40px;
+  padding: 20px;
+  border: 1px solid #828282;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+}
+
+aside .element .elementDetails .elementQuantity button {
+  width: 20px;
+  height: 20px;
+  background-color: #E0E0E0;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+aside .element .elementDetails .elementQuantity button:hover {
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+}
+
+aside .element .elementDetails .elementQuantity output {
+  width: 30px;
+  text-align: center;
+}
+
+aside hr {
+  width: 70%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+aside .asideText {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+aside .asideText p {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.main {
+  width: 500px;
+}
+
+.main h1 {
+  font-size: 36px;
+}
+
+.main fieldset {
+  border: none;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.main fieldset legend {
+  font-size: 18px;
+}
+
+.main fieldset label {
+  font-size: 12px;
+  color: #4F4F4F;
+}
+
+.main fieldset .newInput {
+  width: 80%;
+  height: 40px;
+  border: 1px solid #4F4F4F;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main fieldset .newInput i {
+  width: 15%;
+  color: #828282;
+}
+
+.main fieldset .newInput input {
+  width: 80%;
+  height: 38px;
+  border: none;
+}
+
+.main fieldset .newInput input:focus {
+  outline: none;
+}
+
+.main fieldset .newInput input::-webkit-input-placeholder {
+  color: #828282;
+}
+
+.main fieldset .newInput input:-ms-input-placeholder {
+  color: #828282;
+}
+
+.main fieldset .newInput input::-ms-input-placeholder {
+  color: #828282;
+}
+
+.main fieldset .newInput input::placeholder {
+  color: #828282;
+}
+
+.main fieldset .SpecialText {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.main fieldset .SpecialInput {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main fieldset .SpecialInput .specialSection {
+  width: 45%;
+  height: 40px;
+  border: 1px solid #4F4F4F;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main fieldset .SpecialInput .specialSection i {
+  width: 15%;
+  color: #828282;
+}
+
+.main fieldset .SpecialInput .specialSection input, .main fieldset .SpecialInput .specialSection select {
+  width: 75%;
+  height: 38px;
+  border: none;
+}
+
+.main fieldset .SpecialInput .specialSection input:focus, .main fieldset .SpecialInput .specialSection select:focus {
+  outline: none;
+}
+
+.main fieldset .SpecialInput .specialSection input::-webkit-input-placeholder, .main fieldset .SpecialInput .specialSection select::-webkit-input-placeholder {
+  color: #828282;
+}
+
+.main fieldset .SpecialInput .specialSection input:-ms-input-placeholder, .main fieldset .SpecialInput .specialSection select:-ms-input-placeholder {
+  color: #828282;
+}
+
+.main fieldset .SpecialInput .specialSection input::-ms-input-placeholder, .main fieldset .SpecialInput .specialSection select::-ms-input-placeholder {
+  color: #828282;
+}
+
+.main fieldset .SpecialInput .specialSection input::placeholder, .main fieldset .SpecialInput .specialSection select::placeholder {
+  color: #828282;
+}
+
+.main fieldset .SpecialInput .specialSection select {
+  color: #828282;
+}
+
+.main fieldset .SpecialInput .specialSection select option {
+  color: black;
+}
+
+.main fieldset .informationSave {
+  padding: 10px 5px;
+}
+
+.main fieldset .informationSave input {
+  vertical-align: middle;
+}
+
+.main button {
+  width: 160px;
+  height: 50px;
+  color: white;
+  background-color: #F2994A;
+  border: none;
+  border-radius: 20px;
+  float: right;
+  margin-right: 20%;
+}
+
+.main .secondFieldSet {
+  margin-bottom: 0;
+}
+
+footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  margin: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+  body {
+    width: 90%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  aside {
+    width: 350px;
+    margin: 20px auto;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .main {
+    margin: 20px auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  footer {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 575.98px) {
+  aside {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkout Page</title>
+        <meta charset="utf-8">
+        <meta name="discription" content="Checkout Page">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">    
+            <form validate>
+                <h1>Checkout</h1>
+                <fieldset>
+                    <legend>Contact infomation</legend>
+                    <label>E-mail</label>
+                    <div class="newInput">
+                        <i class="material-icons">email</i>
+                        <input type="email" placeholder="Enter Your Email..." required>
+                    </div>
+                    <label>Phone</label>
+                    <div class="newInput">
+                    <i class="material-icons">settings_phone</i>
+                    <input type="tel" placeholder="Enter Your Phone..." required>
+                    </div>
+                </fieldset>
+                <fieldset class="secondFieldSet">
+                    <legend>Shipping address</legend>
+                    <label>Full Name</label>
+                    <div class="newInput">
+                        <i class="material-icons">face</i>
+                        <input type="text" placeholder="Your Full Name..." required>
+                    </div>
+                    <label>Address</label>
+                    <div class="newInput">
+                        <i class="material-icons">home</i>
+                        <input type="text" placeholder="Your Adress..." required>
+                    </div>
+                    <label>City</label>
+                    <div class="newInput">
+                        <i class="material-icons">location_city</i>
+                        <input type="text" placeholder="Your City..." required>
+                    </div>
+                    <div class="SpecialText">
+                        <label>Country</label>
+                        <label>Postal Code</label>
+                    </div>
+                    <div class="SpecialInput">
+                        <div class="specialSection">
+                            <i class="material-icons">public</i> 
+                            <select name="country" required>
+                                <option disabled selected>Your Country...</option>
+                                <option>Egypt</option>
+                                <option>jordon</option>
+                                <option>palastin</option>
+                                <option>syria</option>
+                                <option>sudan</option>
+                            </select>
+                        </div>
+                        <div class="specialSection">
+                            <i class="material-icons">markunread_mailbox</i>
+                            <input type="text" placeholder="Postal Code..." required>     
+                        </div>
+                    </div>
+                    <div class="informationSave">
+                        <input type="checkbox" name="save">
+                        <label>Save this information for next time</label>
+                    </div>
+                </fieldset>
+                <button type="submit">Continue</button>
+            </form>
+        </div>
+        <aside>
+            <div class="element">
+                <img alt="shopping element" src="images/photo1.png">
+                <div class="elementDetails">
+                    <p class="elementName">Vintage backbag</p>
+                    <span class="elementPrice">&#36;54.99</span>
+                    <span class="elementOldPrice">&#36;94.99</span>
+                    <div class="elementQuantity">
+                        <button class="Plus">+</button>
+                        <output id="output1">1</output>
+                        <button class="Minus">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+                <img alt="shopping element" src="images/photo2.png">
+                <div class="elementDetails">
+                    <p class="elementName">Levi Shoes</p>
+                    <span class="elementPrice">&#36;74.99</span>
+                    <span class="elementOldPrice">&#36;124.99</span>
+                    <div class="elementQuantity">
+                        <button class="Plus">+</button>
+                        <output id="output2">1</output>
+                        <button class="Minus">-</button>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="asideText">
+                <p>Shipping</p>
+                <p>$19</p>
+            </div>
+            <hr/>
+            <div class="asideText">
+                <p>Total</p>
+                <p id="totalPrice">$148.98</p>
+            </div>
+        </aside>
+        <footer>
+            <p>Aly Ahmed @ DevChallenges.io</p>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
